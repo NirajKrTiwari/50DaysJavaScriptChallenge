@@ -1,5 +1,5 @@
-#Day 1
+#Day 2
 ------
 
-Progress Steps - Google Chrome 2023-02-11 23-41-12.mp4
+https://user-images.githubusercontent.com/63774724/218274508-1bb3c3cb-edef-4b98-b245-85c8ec29a327.mp4
 
