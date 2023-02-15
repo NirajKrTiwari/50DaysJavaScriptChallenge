@@ -1,6 +1,6 @@
-#Day 5
+#Day 6
 -------
-Blurry Loading
+Scroll Animation
 
-https://user-images.githubusercontent.com/63774724/218813098-4ac2fdea-b868-49f2-b1a0-d456086ee69f.mp4
+https://user-images.githubusercontent.com/63774724/219119933-c666e1ee-4e36-4842-9683-9e22de70990a.mp4
 
