@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="calculator">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="result">
+                </td>
+                <!-- <td>
+                    <input type="button" value="C" id="clear" onclick="clearDisplay()">
+                </td> -->
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="+" id="one" onclick="display('+')">
+                </td>
+                <td>
+                    <input type="button" value="-" id="two" onclick="display('-')">
+                </td>
+                <td>
+                    <input type="button" value="*" id="three" onclick="display('*')">
+                </td>
+                <td>
+                    <input type="button" value="/" id="add" onclick="display('/')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7" id="seven" onclick="display('7')">
+                </td>
+                <td>
+                    <input type="button" value="8" id="eight" onclick="display('8')">
+                </td>
+                <td>
+                    <input type="button" value="9" id="nine" onclick="display('9')">
+                </td>
+                <td rowspan="4">
+                    <input type="button" value="=" id="equal" onclick="calculate()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" id="four" onclick="display('4')">
+                </td>
+                <td>
+                    <input type="button" value="5" id="five" onclick="display('5')">
+                </td>
+                <td>
+                    <input type="button" value="6" id="six" onclick="display('6')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" id="one" onclick="display('1')">
+                </td>
+                <td>
+                    <input type="button" value="2" id="two" onclick="display('2')">
+                </td>
+                <td>
+                    <input type="button" value="3" id="three" onclick="display('3')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="0" id="zero" onclick="display('0')">
+                </td>
+                <td>
+                    <input type="button" value="." id="dot" onclick="display('.')">
+                </td>
+                <td>
+                    <input type="button" value="C" id="clear" onclick="clearDisplay()">
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
