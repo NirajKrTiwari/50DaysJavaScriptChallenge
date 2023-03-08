@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --left-bg-color: rgba(87, 84, 236, 0.7);
+  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --left-btn-hover-color: rgba(87, 84, 236, 1);
+  --right-btn-hover-color: rgba(28, 122, 28, 1);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: steelblue;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container
+{
+  color: white;
+  padding:20px 40px;
+  background-color: rgb(1, 55, 142);
+  border-radius: 5px;
+}
+.container a{
+  text-decoration: none;
+  color:lightblue;
+}
+.form-control
+{
+  position: relative;
+  margin: 0px 0 30px;
+  width: 300px;
+}
+.form-control input{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  display: block;
+  width:100%;
+  padding: 15px 0;
+  font-size: 1rem;
+  color: #fff;
+}
+.container button{
+  width:100%;
+  font-size:1rem;
+  padding:9px 0;
+  font-weight: bold;
+  background-color: rgb(219, 209, 209);
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.form-control input:focus,
+.form-control input:valid
+{
+  outline: 0;
+  color: lightblue;
+}
+.btn:active
+{
+  transform: scale(0.98)
+}
+.form-control label
+{
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.form-control label span{
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.075, -0.55, 0.265, 1.55);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span
+{
+color: lightblue;
+transform: translateY(-30px);
+}
