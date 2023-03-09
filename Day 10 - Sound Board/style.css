@@ -47,6 +47,11 @@ body {
 {
   outline: none;
 }
+.btn:active
+{
+  transform: translateY(4px);
+  background-color: rgb(57, 14, 113);
+}
 body h2{
   color: white;
   word-spacing: 4px;
