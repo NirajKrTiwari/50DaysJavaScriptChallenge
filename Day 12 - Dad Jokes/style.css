@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --left-bg-color: rgba(87, 84, 236, 0.7);
+  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --left-btn-hover-color: rgba(87, 84, 236, 1);
+  --right-btn-hover-color: rgba(28, 122, 28, 1);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(110, 98, 218);
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.container
+{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid black;
+  padding: 40px 90px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px black;
+}
+.container h3{
+  font-size: 0.7rem;
+  font-weight: none;
+  margin: 0;
+  opacity: 0.5;
+  letter-spacing: 2px;
+}
+.joke
+{
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 50px auto;
+  max-width: 600px;
+}
+.btn
+{
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px black;
+  cursor: pointer;
+}
+.btn:active
+{
+  transform: scale(0.95);
+}
+.btn:focus
+{
+  outline: none;
+}
