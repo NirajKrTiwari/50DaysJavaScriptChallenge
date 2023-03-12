@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --left-bg-color: rgba(87, 84, 236, 0.7);
+  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --left-btn-hover-color: rgba(87, 84, 236, 1);
+  --right-btn-hover-color: rgba(28, 122, 28, 1);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(223, 217, 217);
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  /* flex-wrap: wrap;
+  overflow: hidden;
+  margin: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+h1{
+  text-align: center;
+  margin: 50px 0 30px;
+}
+.faq-container
+{
+  max-width: 600px;
+  margin: 0 auto;
+}
+.faq{
+  background-color: transparent;
+  border: 1px solid #bab5b5;
+  border-radius: 10px;
+  margin:20px 0;
+  padding: 30px;
+  position: relative; 
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.faq.active
+{
+  background-color: white;
+  box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+}
+.faq.active::before,
+.faq.active::after
+{
+  content: '\f075';
+  font-family: 'Font Awesome 5 free';
+  color: aquamarine;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+.faq.active::before
+{
+  color: aqua;
+  top:-10px;
+  left: -30px;
+  transform: rotateY(180deg);
+}
+.faq-title
+{
+  margin: 0px 35px 0 0;
+}
+.faq-text
+{
+  display: none;
+  margin: 30px 0 0;
+}
+.faq.active .faq-text
+{
+  display: block;
+}
+.faq-toggle
+{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+  background-color: #bab5b5;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+}
+.faq-toggle .fa-times
+{
+  display: none;
+}
+.faq.active .faq-toggle .fa-times
+{
+  display: block;
+}
+.faq.active .faq-toggle .fa-chevron-down
+{
+  display: none;
+}
